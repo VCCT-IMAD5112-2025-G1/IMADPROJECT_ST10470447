@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import vcmsa.ci.imadproject2.R
 
+
 class SecondActivity : AppCompatActivity() {
 /
 
