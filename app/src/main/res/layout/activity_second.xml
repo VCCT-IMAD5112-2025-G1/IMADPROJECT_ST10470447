@@ -9,7 +9,7 @@
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/right"
+        android:id="@+id/trueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -17,12 +17,12 @@
         android:layout_marginBottom="184dp"
         android:text="True"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wrong"
+        app:layout_constraintEnd_toStartOf="@+id/falseButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/wrong"
+        android:id="@+id/falseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="269dp"
@@ -79,7 +79,8 @@
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="209dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/right"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/trueButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -107,7 +108,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="65dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/wrong"
+        app:layout_constraintBottom_toTopOf="@+id/falseButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBox" />

@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import vcmsa.ci.imadproject2.R
-import vcmsa.ci.imadproject2.ResultActivity
 
 
 //private var Nothing?.text: Any
@@ -41,8 +39,8 @@ class SecondActivity : AppCompatActivity() {
 
     private lateinit var questionTextView: TextView
     private lateinit var answerTextView: TextView
-    private lateinit var truebutton:Button
-    private lateinit var falsebutton:Button
+    private lateinit var trueButton:Button
+    private lateinit var falseButton:Button
     private lateinit var nextPageButton: Button
     private lateinit var questionCounter: TextView
 
@@ -59,22 +57,22 @@ class SecondActivity : AppCompatActivity() {
 
 
         // initialize views properly
-        val questionTextView = findViewById<TextView>(R.id.textViewBox)
-        val right = findViewById<Button>(R.id.right)
-        val wrong = findViewById<Button>(R.id.wrong)
-        val nextPageButton= findViewById<Button>(R.id.nextPageButton)
-        val answerTextView = findViewById<TextView>(R.id.answerTextView)
-        val questionCounter = findViewById<TextView>(R.id.questionCounter)
+        questionTextView = findViewById<TextView>(R.id.textViewBox)
+        trueButton = findViewById<Button>(R.id.trueButton)
+        falseButton = findViewById<Button>(R.id.falseButton)
+        nextPageButton = findViewById<Button>(R.id.nextPageButton)
+        answerTextView = findViewById<TextView>(R.id.answerTextView)
+        questionCounter = findViewById<TextView>(R.id.questionCounter)
 
 
         //display the first question
         displayquestion(currentQuestionIndex)
 
         //Button logic
-        right.setOnClickListener {
+        trueButton.setOnClickListener {
             checkAnswer(true) }
 
-        wrong.setOnClickListener {
+        falseButton.setOnClickListener {
             checkAnswer(false) }
 
         //Next Question

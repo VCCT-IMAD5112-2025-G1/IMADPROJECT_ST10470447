@@ -1,4 +1,4 @@
-package vcmsa.ci.imadproject2
+package za.co.varsitycollege.imadproject2_st10470447
 
 import android.os.Bundle
 import android.widget.Button
@@ -24,12 +24,12 @@ class ResultActivity : AppCompatActivity() {
         val feedbackTextView = findViewById<TextView>(R.id.feedbackTextView)
         val reviewButton = findViewById<Button>(R.id.reviewButton)
 
-        resultTextView.text = "you got $score out of $total correct"
+        resultTextView.text = "You Got $score Out Of $total Correct"
 
         //Feedback based on performance
         val feedback = when {
             score == total -> "Great work! You are a BrainTeaser pro"
-            score >= total/ 2 ->"good try , keep learning"
+            score >= total/ 2 ->"Good Try , Keep Learning"
             else -> "Try Again Next Time"
         }
         feedbackTextView.text = feedback

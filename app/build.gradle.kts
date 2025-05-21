@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "vcmsa.ci.imadproject2"
+    namespace = "za.co.varsitycollege.imadproject2_st10470447"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "vcmsa.ci.imadproject2"
+        applicationId = "za.co.varsitycollege.imadproject2_st10470447"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

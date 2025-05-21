@@ -9,14 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import vcmsa.ci.imadproject2.R
-import za.co.varsitycollege.imadproject2_st10470447.SecondActivity
 
 class MainActivity : AppCompatActivity() {
-
-    private fun intent(mainActivity: MainActivity, secondActivity: Any): Intent? {
-
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,15 +19,14 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.title = "BrainTeaser"
 
-
         //use Button for clicking
         findViewById<TextView>(R.id.main)
         findViewById<TextView>(R.id.textView)
 
         val btn = findViewById<Button>(R.id.button)
         btn.setOnClickListener {
-            Toast.makeText(this,"Clicked",Toast.LENGTH_SHORT).show()
-            val intent = intent(this, SecondActivity:class.java)
+            Toast.makeText(this,"Clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
