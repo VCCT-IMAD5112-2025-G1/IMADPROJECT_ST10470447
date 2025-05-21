@@ -1,5 +1,6 @@
-package vcmsa.ci.imadproject2
+package za.co.varsitycollege.imadproject2_st10470447
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -8,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import vcmsa.ci.imadproject2.R
 import za.co.varsitycollege.imadproject2_st10470447.SecondActivity
 
 class MainActivity : AppCompatActivity() {

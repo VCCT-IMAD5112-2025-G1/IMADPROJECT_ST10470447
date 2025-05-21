@@ -9,19 +9,20 @@
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/truebutton"
+        android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="121dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="184dp"
         android:text="True"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/falsebutton"
+        app:layout_constraintEnd_toStartOf="@+id/wrong"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/falsebutton"
+        android:id="@+id/wrong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="269dp"
@@ -31,10 +32,10 @@
         android:text="False"
         app:layout_constraintBottom_toTopOf="@+id/nextPageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBox"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.807" />
 
     <TextView
         android:id="@+id/textView2"
@@ -78,7 +79,7 @@
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="209dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/truebutton"
+        app:layout_constraintBottom_toTopOf="@+id/right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -87,15 +88,27 @@
         android:id="@+id/answerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="65dp"
         android:text="Answer"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="546dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextPageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBox" />
 
     <TextView
         android:id="@+id/questionCounter"
         android:layout_width="92dp"
         android:layout_height="33dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="65dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintBottom_toTopOf="@+id/wrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
